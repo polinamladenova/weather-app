@@ -77,3 +77,7 @@ a {
 a:hover {
   color: rgb(54, 134, 65);
 }
+#celsius,
+#fahrenheit {
+  text-decoration: none;
+}
