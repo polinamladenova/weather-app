@@ -89,3 +89,5 @@ function convertToCelsius(event) {
 
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+search("London");
