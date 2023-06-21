@@ -71,13 +71,11 @@ h2 {
 .credits {
   opacity: 0.6;
 }
-a {
+.active {
   color: #ffffff;
+  text-decoration: none;
+  cursor: default;
 }
-a:hover {
-  color: rgb(54, 134, 65);
-}
-#celsius,
-#fahrenheit {
+.active:hover {
   text-decoration: none;
 }
