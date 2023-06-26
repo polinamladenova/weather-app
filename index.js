@@ -55,6 +55,14 @@ function showWeatherConditions(response) {
   celsiusTemperature = response.data.main.temp;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  let precipitationElement = document.querySelector("#precipitation");
+  precipitationElement.innerHTML = response.data.main.precipitation;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = response.data.main.wind;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
