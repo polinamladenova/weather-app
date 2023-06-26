@@ -26,83 +26,85 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-form">
-        <input
-          id="search-query"
-          class="city-enter-field"
-          type="text"
-          placeholder="Enter a city..."
-          autofocus="on"
-          autocomplete="off"
-        />
-        <input class="city-search-field" type="submit" value="Search" />
-        <input class="city-current-field" type="submit" value="Current" />
-      </form>
-      <dev class="popular-cities">
-        <p>New York | London | Tokyo</p>
-      </dev>
-      <h1></h1>
-      <h2>
-        <span id="temperature"></span>
-        <span class="celsiusAndFahrenheit"
-          ><a id="celsius" class="active" href="#">°C</a>|
-          <a id="fahrenheit" href="#">°F</a></span
-        >
-        <img src="" alt="" id="icon" />
-      </h2>
-      <br />
-      <h3></h3>
-      <h3>Cloudy</h3>
-      <br />
-      <p>
-        <button
-          class="btn btn-primary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseExample"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-        >
-          5-day Forecast
-        </button>
-      </p>
-      <div class="row">
-        <div class="col-2 collapse" id="collapseExample">
-          <div class="card card-body">
-            Tue
-            <i class="fa-solid fa-cloud-sun"></i>
-            13°
+      <span class="weather-app">
+        <form id="search-form">
+          <input
+            id="search-query"
+            class="city-enter-field"
+            type="text"
+            placeholder="Enter a city..."
+            autofocus="on"
+            autocomplete="off"
+          />
+          <input class="city-search-field" type="submit" value="Search" />
+          <input class="city-current-field" type="submit" value="Current" />
+        </form>
+        <dev class="popular-cities">
+          <p>New York | London | Tokyo</p>
+        </dev>
+        <h1></h1>
+        <h2>
+          <span id="temperature"></span>
+          <span class="units"
+            ><a id="celsius" class="active" href="#">°C</a>|
+            <a id="fahrenheit" href="#">°F</a></span
+          >
+          <img src="" alt="" id="icon" class="weather-icon" />
+        </h2>
+        <br />
+        <h3></h3>
+        <h3>Cloudy</h3>
+        <br />
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            5-day Forecast
+          </button>
+        </p>
+        <div class="row">
+          <div class="col-2 collapse" id="collapseExample">
+            <div class="card card-body">
+              Tue
+              <i class="fa-solid fa-cloud-sun"></i>
+              13°
+            </div>
+          </div>
+          <div class="col-2 collapse" id="collapseExample">
+            <div class="card card-body">
+              Wed
+              <i class="fa-solid fa-cloud-sun"></i>
+              12°
+            </div>
+          </div>
+          <div class="col-2 collapse" id="collapseExample">
+            <div class="card card-body">
+              Thu
+              <i class="fa-solid fa-cloud"></i>
+              9°
+            </div>
+          </div>
+          <div class="col-2 collapse" id="collapseExample">
+            <div class="card card-body">
+              Fri
+              <i class="fa-solid fa-cloud-sun"></i>
+              11°
+            </div>
+          </div>
+          <div class="col-2 collapse" id="collapseExample">
+            <div class="card card-body">
+              Sat
+              <i class="fa-solid fa-sun"></i>
+              14°
+            </div>
           </div>
         </div>
-        <div class="col-2 collapse" id="collapseExample">
-          <div class="card card-body">
-            Wed
-            <i class="fa-solid fa-cloud-sun"></i>
-            12°
-          </div>
-        </div>
-        <div class="col-2 collapse" id="collapseExample">
-          <div class="card card-body">
-            Thu
-            <i class="fa-solid fa-cloud"></i>
-            9°
-          </div>
-        </div>
-        <div class="col-2 collapse" id="collapseExample">
-          <div class="card card-body">
-            Fri
-            <i class="fa-solid fa-cloud-sun"></i>
-            11°
-          </div>
-        </div>
-        <div class="col-2 collapse" id="collapseExample">
-          <div class="card card-body">
-            Sat
-            <i class="fa-solid fa-sun"></i>
-            14°
-          </div>
-        </div>
-      </div>
+      </span>
       <br />
       <p class="credits">
         <a href="https://github.com/polinamladenova/weather-app" target="_blank"
