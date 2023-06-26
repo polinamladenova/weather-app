@@ -17,7 +17,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: rgb(54, 134, 65);
+  color: #70757a;
 }
 ul {
   font-size: 18px;
@@ -25,7 +25,7 @@ ul {
   margin-top: 70px;
 }
 .weather-app {
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255, 0.5);
   font-family: "Source Sans Pro", sans-serif;
   border: solid 1px rgb(255, 255, 255, 0.3);
   border-radius: 15px;
@@ -36,22 +36,22 @@ ul {
   padding: 20px 20px 5px 20px;
 }
 .city-search-field {
-  background-color: #edf9a9;
-  color: rgb(37, 35, 35);
+  background-color: #202124;
+  color: #ffffff;
   margin: 10px;
 }
 .city-search-field:hover {
-  background-color: #ffffff83;
+  background-color: #2d2f34;
   color: #ffffff;
 }
 
 .city-current-field {
-  background-color: #1d2886;
+  background-color: rgb(54, 134, 65);
   color: #ffffff;
 }
 
 .city-current-field:hover {
-  background-color: #ffffff83;
+  background-color: rgb(61, 155, 73);
   color: #ffffff;
 }
 
@@ -79,14 +79,14 @@ ul {
   margin-bottom: 20px;
 }
 .btn-primary {
-  background-color: rgb(54, 134, 65);
+  background-color: #202124;
   border: none;
   border-radius: 10px;
   padding: 6px 12px;
   margin-bottom: 20px;
 }
 .btn-primary:hover {
-  background-color: rgb(33, 49, 35);
+  background-color: #2d2f34;
   border: none;
 }
 .credits {
@@ -98,7 +98,7 @@ ul {
 }
 
 .active {
-  color: #ffffff;
+  color: #202124;
   cursor: default;
 }
 .active:hover {
