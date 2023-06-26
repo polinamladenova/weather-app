@@ -1,60 +1,69 @@
 body {
   background-image: url("scenerycloudymountain.jpg");
   background-size: 100%;
-  font-family: "Source Sans Pro", sans-serif;
   color: #ffffff;
-  border: solid 1px rgb(255, 255, 255, 0.3);
-  border-radius: 15px;
-  margin: 30px;
-}
-form {
-  margin-top: 25px;
 }
 input {
   border: none;
   border-radius: 10px;
   padding: 6px 12px;
   background-color: #ffffff;
-  opacity: 0.5;
 }
-
 h2 {
   font-size: 70px;
+  margin-bottom: -15px;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(54, 134, 65);
+}
+ul {
+  list-style: none;
+  margin-top: 70px;
+}
+.weather-app {
+  font-family: "Source Sans Pro", sans-serif;
+  border: solid 1px rgb(255, 255, 255, 0.3);
+  border-radius: 15px;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px 20px 5px 20px;
+}
 .city-search-field {
   background-color: #edf9a9;
   color: rgb(37, 35, 35);
-  opacity: 1;
-  opacity: 1;
+  margin: 10px;
 }
 .city-search-field:hover {
   background-color: #ffffff83;
   color: #ffffff;
-  opacity: 1;
 }
 
 .city-current-field {
   background-color: #1d2886;
   color: #ffffff;
-  opacity: 1;
-  opacity: 1;
 }
 
 .city-current-field:hover {
   background-color: #ffffff83;
   color: #ffffff;
-  opacity: 1;
 }
 
-.celsiusAndFahrenheit {
+.units {
   font-size: 35px;
   position: relative;
-  top: -35px;
+  bottom: 20px;
 }
-
+.weather-icon {
+  position: relative;
+  bottom: 10px;
+  font-size: 100px;
+  margin-left: -25px;
+}
 .popular-cities {
-  text-align: right;
   color: #edf9a9;
   font-size: 19px;
 }
@@ -64,13 +73,15 @@ h2 {
   font-size: 20px;
   color: black;
   background-color: #ffffff;
-  opacity: 0.5;
+  opacity: 0.6;
+  margin-bottom: 20px;
 }
 .btn-primary {
   background-color: rgb(54, 134, 65);
   border: none;
   border-radius: 10px;
   padding: 6px 12px;
+  margin-bottom: 20px;
 }
 .btn-primary:hover {
   background-color: rgb(33, 49, 35);
@@ -78,10 +89,14 @@ h2 {
 }
 .credits {
   opacity: 0.6;
+  text-align: center;
 }
+.credits a {
+  color: aquamarine;
+}
+
 .active {
   color: #ffffff;
-  text-decoration: none;
   cursor: default;
 }
 .active:hover {
