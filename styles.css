@@ -1,5 +1,5 @@
 body {
-  background-image: url("scenerycloudymountain.jpg");
+  background-image: url("misty-forest-background.jpg");
   background-size: 100%;
   color: #202124;
 }
@@ -29,7 +29,7 @@ ul {
   margin-top: 65px;
 }
 .weather-app {
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.4);
   font-family: "Source Sans Pro", sans-serif;
   border: solid 1px rgb(255, 255, 255, 0.3);
   border-radius: 15px;
