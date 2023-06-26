@@ -1,7 +1,7 @@
 body {
-  background-image: url("misty-forest-background.jpg");
+  background-image: url("purple-haze-background.jpg");
   background-size: 100%;
-  color: #202124;
+  color: #ffffff;
 }
 input {
   border: none;
@@ -21,7 +21,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #70757a;
+  color: #6841ac;
 }
 ul {
   font-size: 18px;
@@ -29,7 +29,7 @@ ul {
   margin-top: 65px;
 }
 .weather-app {
-  background-color: rgb(255, 255, 255, 0.4);
+  background-color: rgb(255, 255, 255, 0.1);
   font-family: "Source Sans Pro", sans-serif;
   border: solid 1px rgb(255, 255, 255, 0.3);
   border-radius: 15px;
@@ -40,22 +40,22 @@ ul {
   padding: 20px 20px 5px 20px;
 }
 .city-search-field {
-  background-color: #202124;
+  background-color: #1b0d40;
   color: #ffffff;
   margin: 10px;
 }
 .city-search-field:hover {
-  background-color: #2d2f34;
+  background-color: #251258;
   color: #ffffff;
 }
 
 .city-current-field {
-  background-color: rgb(54, 134, 65);
+  background-color: #ea4248;
   color: #ffffff;
 }
 
 .city-current-field:hover {
-  background-color: rgb(61, 155, 73);
+  background-color: #f65b60;
   color: #ffffff;
 }
 
@@ -67,7 +67,7 @@ ul {
 .weather-icon {
   position: relative;
   bottom: 10px;
-  font-size: 100px;
+  font-size: 300px;
   margin-left: -25px;
 }
 .popular-cities {
@@ -83,14 +83,14 @@ ul {
   margin-bottom: 20px;
 }
 .btn-primary {
-  background-color: #202124;
+  background-color: #1b0d40;
   border: none;
   border-radius: 10px;
   padding: 6px 12px;
   margin-bottom: 20px;
 }
 .btn-primary:hover {
-  background-color: #2d2f34;
+  background-color: #251258;
   border: none;
 }
 .credits {
@@ -104,7 +104,7 @@ ul {
 }
 
 .active {
-  color: #202124;
+  color: #ffffff;
   cursor: default;
 }
 .active:hover {
