@@ -35,12 +35,7 @@
           autofocus="on"
           autocomplete="off"
         />
-        <input
-          class="city-search-field"
-          type="submit"
-          value="Search"
-          onfocus="this.value=''"
-        />
+        <input class="city-search-field" type="submit" value="Search" />
         <input class="city-current-field" type="submit" value="Current" />
       </form>
       <dev class="popular-cities">
@@ -48,9 +43,11 @@
       </dev>
       <h1></h1>
       <h2>
-        <span id="temperature"></span>°
-        <a id="celsius" class="active" href="#">C </a>|
-        <a id="fahrenheit" href="#">F</a>
+        <span id="temperature"></span>
+        <span class="celsiusAndFahrenheit"
+          ><a id="celsius" class="active" href="#">°C</a>|
+          <a id="fahrenheit" href="#">°F</a></span
+        >
         <img src="" alt="" id="icon" />
       </h2>
       <br />
