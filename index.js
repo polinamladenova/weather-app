@@ -50,6 +50,31 @@ let h3 = document.querySelector("h3");
 let now = new Date();
 h3.innerHTML = formatDate(now);
 
+function showWeatherForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2 collapse" id="collapseExample">
+              <div class="card card-body">
+                <span class="weather-forecast-date">${day}</span>
+                <i class="fa-solid fa-cloud-sun"></i>
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max">13°</span>
+                  <span class="weather-forecast-temperature-min">10°</span>
+                </div>
+              </div>
+            </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showWeatherConditions(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
@@ -105,6 +130,8 @@ function convertToCelsius(event) {
 }
 
 let celsiusTemperature = null;
+
+showWeatherForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
