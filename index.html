@@ -28,17 +28,27 @@
     <div class="container">
       <span class="weather-app">
         <form id="search-form">
-          <input
-            id="search-query"
-            class="city-enter-field"
-            type="text"
-            placeholder="Enter a city..."
-            autofocus="on"
-            autocomplete="off"
-          />
-          <button type="submit" class="city-search-field" id="search-button">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+          <div class="row">
+            <div class="col-9">
+              <input
+                id="search-query"
+                class="city-enter-field"
+                type="text"
+                placeholder="Enter a city..."
+                autofocus="on"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                type="submit"
+                class="city-search-field"
+                id="search-button"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
         </form>
 
         <dev class="row">
