@@ -28,7 +28,7 @@ ul {
   font-size: 18px;
   color: #edf9a9;
   list-style: none;
-  margin-top: 65px;
+  margin-top: 80px;
 }
 .weather-app {
   background-color: rgb(255, 255, 255, 0.1);
@@ -72,6 +72,10 @@ ul {
   bottom: 10px;
 
   margin-left: -25px;
+}
+
+.humidity {
+  margin-left: 5px;
 }
 
 .card-body {
