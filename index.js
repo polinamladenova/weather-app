@@ -51,6 +51,7 @@ let now = new Date();
 h3.innerHTML = formatDate(now);
 
 function showWeatherForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Thu", "Fri", "Sat", "Sun"];
@@ -76,7 +77,6 @@ function showWeatherForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "3fdc8cfbf2d6fa0116c9ae92d3df4f79";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeatherForecast);
@@ -137,8 +137,6 @@ function convertToCelsius(event) {
 }
 
 let celsiusTemperature = null;
-
-showWeatherForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
