@@ -17,9 +17,10 @@ h2 {
 h3 {
   font-size: 25px;
   line-height: 25px;
+}
+h3::first-letter {
   text-transform: capitalize;
 }
-
 a {
   text-decoration: none;
   color: #6841ac;
