@@ -50,7 +50,7 @@ let h3 = document.querySelector("h3");
 let now = new Date();
 h3.innerHTML = formatDate(now);
 
-function showWeatherForecast() {
+function showWeatherForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Thu", "Fri", "Sat", "Sun"];
@@ -75,6 +75,13 @@ function showWeatherForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "3fdc8cfbf2d6fa0116c9ae92d3df4f79";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showWeatherForecast);
+}
+
 function showWeatherConditions(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   celsiusTemperature = response.data.main.temp;
@@ -94,7 +101,7 @@ function showWeatherConditions(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  console.log(response.data);
+  getForecast(response.data.coord);
 }
 
 function search(city) {
